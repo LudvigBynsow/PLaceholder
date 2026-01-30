@@ -49,11 +49,14 @@ import { onMount } from 'svelte';
         {#each pokemons as pokemon}
         
         
-        <img src={pokemon.img} alt={pokemon.name} onclick={goto('/search/' + pokemon.name)}>
+        <img src={pokemon.img} alt={pokemon.name} onclick={goto('/search/' + pokemon.name)} >
             
         {/each}
+
+        
  </footer>
 
+ <input type="button" value="Rensa historik" onclick={()=>{pokemons=[]; $pokemons_store = "[]"}}>
 
 <style>
     .write{
@@ -72,6 +75,13 @@ import { onMount } from 'svelte';
         justify-content: center;
         align-content: end;
         
+    }
+    img:hover{
+        transform: scale(1.1);
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    input{
+        margin-top: 10px;
     }
 
 </style>
