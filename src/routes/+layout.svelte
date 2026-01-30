@@ -15,6 +15,10 @@
 	<a href="{base}/shoppinglist">Shoppinglist</a>
 
 	<a href="{base}/memory">Memory</a>
+
+	<a href="{base}/chat">Chat</a>
+
+	<a href="{base}/search">Search</a>
 </nav>
 <svelte:head>
 	<link rel="icon" href={favicon} />

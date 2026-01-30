@@ -51,7 +51,7 @@
         </label>
         
 
-        <label for="password">Lösenord
+        <label for="password">Lösenord:
             <input type="text" id="password" bind:value={lösen}>
         </label >
         
